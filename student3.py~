@@ -1,0 +1,16 @@
+#!/usr/bin/python3
+"""
+Here, we'll use classes to create a student datatype.
+Objects are created from classess. They are instances ofclasses.
+With classes and oop, we can valiated entered data. It gives us more control over our data
+   Methods - functions defined in a class
+"""
+class Student:
+    """Initializing the contents of the class
+    We add variables to objects.
+    in initialization, self - can be named anything. It gives you a
+    ccess to the just created object
+    """
+    def __init__(self, name, house):
+        self.name = name
+        self.house = house
