@@ -12,7 +12,8 @@ Setter - A function for a class that sets some value
     can't be the same.
     -The convention to work around this is to place _ before the instance
      variables name in the setter and the getters return value
-This 2 prevent manipulation of data by requirimg that inorder to get/set to some attribute you go through some function
+This 2 prevent manipulation of data by requirimg that inorder to get/set to some
+attribute you go through some function
 We can now move our error checking from the init function to the setter function.
 """
 
@@ -39,6 +40,7 @@ class Student:
         return self._house
     @house.setter
     def house(self,house):
+
         if house not in ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]:
             raise ValueError ("Wrong House!")
         self._house = house

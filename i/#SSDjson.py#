@@ -1,0 +1,21 @@
+#!/usr/bin/python3
+"""
+Json - Javascript Object Notation
+lightweight data interchange format inspired by javascript
+
+"""
+import json
+
+# Example data
+data = {
+    "name": "John Doe",
+    "age": 30,
+    "city": "New York"
+}
+
+# Specify the filename to save the JSON data
+filename = "data.json"
+
+# Save data as JSON
+with open(filename, "w") as file:
+    json.dump(data, file)
